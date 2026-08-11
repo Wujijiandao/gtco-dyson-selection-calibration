@@ -2,7 +2,7 @@ Dear Editor,
 
 Please consider the manuscript entitled
 
-“From Dyson-sphere candidates to population constraints: calibrating selection and real-image completeness in Gaia--2MASS--WISE searches”
+“From Dyson-sphere candidates to population constraints: calibrating selection and conditional real-image response in Gaia--2MASS--WISE searches”
 
 for publication as an MNRAS Paper.
 
@@ -14,7 +14,7 @@ A permanent Zenodo DOI for the frozen submission release will be added before fi
 
 AI-use disclosure: OpenAI ChatGPT was used as an interactive research assistant for code prototyping, numerical-analysis workflow development, manuscript drafting, and language editing. The author reviewed the data inputs, executable analysis steps, numerical outputs, references, and scientific claims and takes responsibility for the submitted work.
 
-No special handling request is made at present. Any conflict-of-interest declaration, if applicable, will be supplied consistently in the manuscript and submission system.
+No special handling request is made at present.
 
 Yours sincerely,
 

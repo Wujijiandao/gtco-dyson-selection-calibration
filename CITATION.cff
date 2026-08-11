@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software or reproduction package, please cite the archived release and associated paper."
+title: "GTCO Dyson-Sphere Selection Calibration"
+type: software
+authors:
+  - family-names: "Zhang"
+    given-names: "Yuzhan"
+    orcid: "https://orcid.org/0009-0000-3121-7972"
+repository-code: "https://github.com/Wujijiandao/gtco-dyson-selection-calibration"
+url: "https://github.com/Wujijiandao/gtco-dyson-selection-calibration"
+version: "1.0.0-submission"
+date-released: "2026-08-12"
+license: MIT
+keywords:
+  - technosignatures
+  - Dyson spheres
+  - Gaia
+  - 2MASS
+  - WISE
+  - selection functions
+  - injection recovery
+  - reproducibility

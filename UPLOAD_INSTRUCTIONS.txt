@@ -1,7 +1,7 @@
-Replace/upload these files in the EXISTING repository:
+Upload/replace these files in the EXISTING public repository:
 https://github.com/Wujijiandao/gtco-dyson-selection-calibration
 
-Do not retain the old robust W4/joint morphology claim. v2.3 supersedes it.
+This v2.4 PRE-ZENODO update supersedes the v2.3 manuscript/metadata snapshot.
+Do not create a second repository.
 
-After the update is visible and checked, create `v1.0.0-submission`.
-Only then archive the release with Zenodo.
+After the v2.4 files are visible, confirm conflict/funding metadata, then create the frozen GitHub release `v1.0.0-submission`. Only after that should Zenodo archive the release.

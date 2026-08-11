@@ -26,7 +26,7 @@ $^{1}$Independent Researcher, Beijing, China
 \maketitle
 
 \begin{abstract}
-Mid-infrared searches for partial Dyson spheres can identify sources consistent with stellar obscuration plus thermal waste heat, but candidate counts cannot be converted into occurrence rates without a selection function matched to the candidate operator. We calibrate several response terms using a 100-pc Gaia DR3 parent sample cross-matched to 2MASS and AllWISE. A 10-band injection--recovery experiment using 265 real stellar templates and a 220,745-model partial-Dyson library yields a conditional SED-recognition response of 0.910 across a 54-cell waste-heat grid. The result is stable to a conservative flux-dependent noise bracket (0.910) and changes to 0.911--0.917 in W2-correction-aware template tests. Combining injected photometric recovery with the \emph{baseline observed} Gaia/WISE host gate on the same 3,000 validation stars gives 0.414 rather than 0.402 from multiplying stage averages; a host-cluster bootstrap gives a 95 per cent interval of 0.0089--0.0147 for the difference. This quantity measures source-level coupling, not counterfactual host completeness. In real AllWISE image injections, leave-one-host-out W3 retention remains unity for 23 baseline-clean hosts under metric/threshold ablations, independent empirical-PSF splits, moderate PSF broadening, and subpixel offsets, giving a one-sided 95 per cent host-level lower bound of 0.878. W4 is qualitatively different: matched-PSF retention is unity but falls to 0.451 under mild PSF broadening and 0.362 for a 0.1-pixel injection offset. We therefore treat W4 morphology response as PSF-model dependent. The remaining end-to-end terms are not calibrated, so we do not report a Dyson-sphere occurrence rate.
+Mid-infrared searches for partial Dyson spheres can identify sources consistent with stellar obscuration plus thermal waste heat, but candidate counts cannot be converted into occurrence rates without a selection function matched to the candidate operator. We calibrate several response terms using a 100-pc Gaia DR3 parent sample cross-matched to 2MASS and AllWISE. A 10-band injection--recovery experiment using 265 real stellar templates and a 220,745-model partial-Dyson library yields a conditional SED-recognition response of 0.910 across a 54-cell waste-heat grid. The result is stable to a conservative flux-dependent noise bracket (0.910) and changes to 0.911--0.917 in W2-correction-aware template tests. Combining injected photometric recovery with the \emph{baseline observed} Gaia/WISE host gate on the same 3,000 validation stars gives 0.414 rather than 0.402 from multiplying stage averages; a source-cluster bootstrap gives a 95 per cent interval of 0.0089--0.0147 for the difference. This quantity measures source-level coupling, not counterfactual host completeness. In real AllWISE image injections, leave-one-host-out W3 retention remains unity for 23 baseline-clean hosts under metric/threshold ablations, independent empirical-PSF splits, moderate PSF broadening, and subpixel offsets, giving a one-sided 95 per cent host-level lower bound of 0.878. W4 is qualitatively different: matched-PSF grid-cell retention is unity but falls to 0.451 under mild PSF broadening and 0.362 for a 0.1-pixel injection offset. We therefore treat W4 morphology response as PSF-model dependent. The remaining end-to-end terms are not calibrated, so we do not report a Dyson-sphere occurrence rate.
 \end{abstract}
 
 \begin{keywords}
@@ -199,7 +199,11 @@ This is a grid average, not a population-marginalized completeness: changing the
 
 The published Hephaistos-II template-selection appendix states that WISE saturation limits of W1 $=8.1$, W2 $=6.7$, W3 $=3.8$, and W4 $=-0.4$ mag were considered, and that a W2 correction following \citet{CottenSong2016} was applied \citep{Suazo2024}. Our frozen 265-star emulation does not reproduce the original template identities: 86/265 frozen templates are brighter than 8.1 mag in W1 and 58/265 are brighter than 6.7 mag in W2, while none cross the W3 or W4 characteristic thresholds. We therefore do not describe the frozen library as an exact reproduction of the original saturation semantics.
 
+The separate 3,000-star validation set is not restricted by the template-star saturation rule: 51.4 per cent and 14.5 per cent of its baseline rows are brighter than the W1 and W2 nominal saturation onsets, respectively, while only 0.1 per cent cross the W3 onset and none cross the W4 onset. As an additional conditioning check, restricting validation to the 1,458 stars fainter than all four nominal WISE saturation onsets increases the mean recovery to 0.947213. Because this restriction changes the luminosity and host distribution of the validation population, we report it as a subset sensitivity rather than treating it as a correction to the baseline 0.9105 response.
+
 We performed two correction-aware sensitivity tests. Applying the W2 correction while retaining the frozen template identities changes the mean response from 0.910537 to 0.911086. Reselecting a 265-star template sequence with the correction applied while preserving the bright-to-faint $M_G$ coverage gives 0.916605. By contrast, interpreting all four quoted WISE saturation-onset magnitudes as literal hard exclusion cuts removes the bright end of the available template sequence ($M_G$ then begins near 4.46 rather than near 0) and gives 0.696488. Because this literal hard-cut construction no longer reproduces the published broad $M_G$ template coverage, we retain it only as a deliberately severe stress test rather than as the preferred emulation. WISE documentation likewise distinguishes the onset of saturation from complete loss of measurable source flux, since some saturated-source photometry can be recovered from PSF wings \citep{Cutri2012}.
+
+WISE broad-band response is a separate concern from W2 saturation correction. The WISE photometric calibration explicitly requires spectral colour corrections for steep mid-infrared spectra, especially in the broad W3 passband \citep{Wright2010}. For example, the tabulated 100-K blackbody factor is $f_c({\rm W3})=2.6588$. We therefore repeated the full library construction and 54-cell recovery after applying the published blackbody colour-correction factors to the added waste-heat component in W1--W4, using log-temperature interpolation between the tabulated 100, 141, 200, 283, 400, 566, and 800-K anchors. Retaining the frozen reference wavelengths gives a mean recovery of 0.912309. Replacing the WISE reference wavelengths by the published isophotal values (3.3526, 4.6028, 11.5608, and 22.0883~$\mu$m) while applying the same colour corrections gives 0.911568. Thus, even though the coldest W3 correction is individually large, incorporating the WISE broad-band response at this level changes the equally weighted grid-average response by only $1$--$2\times10^{-3}$. This is a sensitivity calculation using the published WISE colour-correction system, not a claim of exact full-pipeline synthetic photometry.
 
 The baseline injection also keeps each source's measured absolute flux uncertainty fixed as the counterfactual flux changes. To test the sensitivity of the 0.91 result to that approximation, we bracketed alternative flux-dependent noise laws. A conservative floor-plus-Poisson model,
 \begin{equation}
@@ -209,7 +213,7 @@ prevents artificially improved absolute noise when a source is dimmed while allo
 
 \begin{table}
 \centering
-\caption{Photometric robustness tests. The hard four-band saturation-onset cut is a deliberately severe stress test because it eliminates the bright end of the template sequence; it is not the preferred reconstruction.}
+\caption{Photometric robustness tests. The WISE blackbody colour-correction row applies the published W1--W4 blackbody response factors and WISE isophotal wavelengths. The hard four-band saturation-onset cut is a deliberately severe stress test because it eliminates the bright end of the template sequence; it is not the preferred reconstruction.}
 \label{tab:photrobust}
 \begin{tabular}{lr}
 \toprule
@@ -218,6 +222,7 @@ Variant & Mean recovery\\
 Frozen baseline & 0.910537\\
 Frozen templates + W2 correction & 0.911086\\
 Correction-aware template sequence & 0.916605\\
+WISE BB colour corr. + isophotal $\lambda$ & 0.911568\\
 Conservative floor+Poisson noise & 0.910309\\
 Hard four-band onset cut (stress) & 0.696488\\
 \bottomrule
@@ -412,11 +417,11 @@ The band dependence is strong (Table~\ref{tab:psfmismatch}; Fig.~\ref{fig:psfmis
 
 \begin{table}
 \centering
-\caption{Conditional retention under injection-PSF mismatch. The scoring PSF and morphology calibration remain LOHO. The disjoint-split case is a severe empirical-PSF stress test.}
+\caption{Conditional grid-cell retention under injection-PSF mismatch. The scoring PSF and morphology calibration remain LOHO. Grid cells are repeated phenotypes on the same hosts and are not independent Bernoulli trials. The disjoint-split case is a severe empirical-PSF stress test.}
 \label{tab:psfmismatch}
 \begin{tabular}{lrr}
 \toprule
-Challenge & W3 & W4\\
+Challenge & W3 grid-cell & W4 grid-cell\\
 \midrule
 Matched PSF & 1.000 & 1.000\\
 Mild broadening & 1.000 & 0.451\\
@@ -517,7 +522,7 @@ These limitations are the reason no stellar Dyson-sphere occurrence rate is quot
 \section{Reproducibility and audit trail}
 \label{sec:repro}
 
-The submission-critical analysis is separated from the earlier exploratory research history. Frozen inputs are recorded by filename, byte size, and SHA-256 hash. The 24-star real-image analysis has a per-product manifest covering all 144 W3/W4 intensity, uncertainty, and coverage FITS files. The public reproduction path contains separate scripts for input verification, deterministic baseline host cuts, standalone E12c/E17f photometric--host reconstruction, LOHO real-image injection, host-level confidence intervals, metric/threshold ablation, photometric noise bracketing, and injection/scoring PSF-mismatch challenges. The standalone catalogue reconstruction rebuilds the 220,745-model library from the frozen real templates and reruns all 54 truth cells on the 3,000 validation stars rather than reading frozen summary tables as inputs. Alternative correction-aware template tables, the four-band hard-cut stress-test table, source-cluster bootstrap results, and PSF-mismatch case summaries are frozen alongside the manuscript outputs.
+The submission-critical analysis is separated from the earlier exploratory research history. Frozen inputs are recorded by filename, byte size, and SHA-256 hash. The 24-star real-image analysis has a per-product manifest covering all 144 W3/W4 intensity, uncertainty, and coverage FITS files. The public reproduction path contains separate scripts for input verification, deterministic baseline host cuts, standalone E12c/E17f photometric--host reconstruction, LOHO real-image injection, host-level confidence intervals, metric/threshold ablation, photometric noise bracketing, injection/scoring PSF-mismatch challenges, WISE blackbody colour-correction/isophotal-wavelength sensitivity, and the all-band-unsaturated validation-subset check. The standalone catalogue reconstruction rebuilds the 220,745-model library from the frozen real templates and reruns all 54 truth cells on the 3,000 validation stars rather than reading frozen summary tables as inputs. Alternative correction-aware template tables, the four-band hard-cut stress-test table, source-cluster bootstrap results, colour-correction outputs, validation-conditioning outputs, and PSF-mismatch case summaries are frozen alongside the manuscript outputs.
 
 The numerical workflow uses Python with NumPy, pandas, SciPy, and Matplotlib \citep{Harris2020,McKinney2010,Virtanen2020,Hunter2007}. The repository also contains frozen result tables, claim boundaries distinguishing supported and unsupported interpretations, and a manuscript copy. Rejected or exploratory calculations are not silently promoted into the submission path. In particular, the independent host rather than the repeated injection grid cell is used as the statistical unit for the final real-image confidence statement.
 
@@ -532,13 +537,13 @@ A versioned archival DOI will be inserted in the final submission after the corr
 We have developed and audited a selection-calibration framework for mid-infrared partial-Dyson searches based on Gaia DR3, 2MASS, and AllWISE data. The main results are:
 
 \begin{enumerate}
-\item A 220,745-model, real-star injection--recovery experiment gives a mean conditional SED-recognition response of approximately 0.910 over the tested 54-cell $(T_{\rm DS},\gamma)$ grid. The standalone executable reconstruction gives 0.910537 versus the frozen 0.910543. A conservative floor-plus-Poisson flux-noise bracket gives 0.910309, while W2-correction-aware template tests give 0.911--0.917. Thus the 0.91 summary is stable to the reasonable hardening variants tested here, although it remains conditional on the validation-eligible ten-band sample and on the adopted SED emulation.
+\item A 220,745-model, real-star injection--recovery experiment gives a mean conditional SED-recognition response of approximately 0.910 over the tested 54-cell $(T_{\rm DS},\gamma)$ grid. The standalone executable reconstruction gives 0.910537 versus the frozen 0.910543. A conservative floor-plus-Poisson flux-noise bracket gives 0.910309, W2-correction-aware template tests give 0.911--0.917, and a WISE blackbody colour-correction/isophotal-wavelength sensitivity gives 0.911568. Thus the 0.91 summary is stable to the reasonable hardening variants tested here, although it remains conditional on the validation-eligible ten-band sample and on the adopted SED emulation.
 
 \item The observed baseline Gaia/WISE host gate passes 0.442 of the same 3,000 validation stars. Combining each injected photometric outcome with the baseline host state of the same source gives 0.414, whereas multiplying stage means gives 0.402. The difference is $0.0118$ with a 95 per cent source-cluster bootstrap interval of $0.0089$--$0.0147$. This demonstrates measurable same-source dependence, but 0.414 is not a counterfactual host completeness because Gaia/WISE host products are not regenerated after injection.
 
 \item In real AllWISE W3 images, LOHO co-spatial injection produces no morphology failure among 23 independent baseline-clean, unsaturated hosts. W3 remains fully retained after removing the pseudo-$\chi^2$ feature, changing empirical thresholds, splitting the empirical injection/scoring PSFs, moderate PSF broadening, and offsets up to 0.5 Atlas pixel. The one-sided 95 per cent host-level lower bound for the tested W3 response is 0.878.
 
-\item W4 does not support the same robust scalar statement. Its matched-PSF LOHO retention is 1.000, but retention falls to 0.451 under mild PSF broadening and 0.362 for a 0.1-pixel injection offset, with stronger mismatch producing still lower values. The W4 result is therefore evidence of PSF-model sensitivity rather than a morphology-completeness bound.
+\item W4 does not support the same robust scalar statement. Its matched-PSF LOHO grid-cell retention is 1.000, but grid-cell retention falls to 0.451 under mild PSF broadening and 0.362 for a 0.1-pixel injection offset, with stronger mismatch producing still lower values. The W4 result is therefore evidence of PSF-model sensitivity rather than a morphology-completeness bound.
 
 \item Image-stage completeness should be represented as a conditional chain,
 \begin{equation}
@@ -565,6 +570,9 @@ This work makes use of data from the ESA \textit{Gaia} mission, 2MASS, and the W
 
 The public survey data used in this work are available from the Gaia Archive and the NASA/IPAC Infrared Science Archive. Submission-critical analysis scripts, input hashes, frozen result tables, figure products, and claim-boundary documentation are publicly available at \url{https://github.com/Wujijiandao/gtco-dyson-selection-calibration}. A permanent Zenodo DOI for the frozen submission release will be inserted before final submission. The real AllWISE cutouts used for the 24-field image-response experiment can be regenerated from source coordinates and the per-file IRSA product manifest supplied in the repository.
 
+\bibliographystyle{mnras}
+\bibliography{references}
+
 \appendix
 
 \section{Frozen selection semantics}
@@ -575,16 +583,6 @@ For reproducibility, the deterministic host semantics are summarized here. H$\al
 For the photometric validation experiment, the 265 template stars and the 3,000 validation stars are disjoint. Both are drawn from the strict ten-band analysis-supporting pool. The truth grid is fixed before recovery evaluation, and the default validation noise is source-specific. The frozen random seed used for the reconstructed validation injection is recorded in the reproduction materials. Alternative W2-corrected template tables, a literal saturation-onset stress-test table, and flux-dependent noise brackets are stored as sensitivity products rather than silently substituted into the baseline run.
 
 The deterministic host gate is evaluated on the observed baseline catalogue row and is not relabelled as a counterfactual host completeness. For the image experiment, the tested star is excluded from both PSF construction and morphology calibration. Proper motion is propagated from Gaia epoch 2016.0 to a common WISE epoch approximation of 2010.5. The W3/W4 signal is injected at that propagated stellar position. Counterfactuals crossing the characteristic WISE saturation onsets are labelled saturation-risk and excluded from the linear morphology-retention statement. PSF-mismatch challenges keep the scoring operator fixed while modifying the injection template.
-
-\section{Additional robustness interpretation}
-\label{app:robust}
-
-The W3 threshold ablation in Table~\ref{tab:ablation} changes which baseline fields are considered clean but does not produce a signal-induced image failure in any retained field. More importantly, the W3 result survives the PSF-mismatch tests in Table~\ref{tab:psfmismatch}. W4 demonstrates why this extra challenge is necessary: metric/threshold ablation alone would have suggested complete retention, whereas modest injection/scoring PSF mismatch produces substantial failures.
-
-The W3 host-level confidence interval is deliberately conservative with respect to the injection grid. A host with 30 successful grid cells still contributes one independent host-level success, not 30 binomial trials. The reported lower bound should be understood as a summary of the 23 tested clean hosts under the stated challenge family, not a population statement about arbitrary WISE environments. If future work expands the image sample to hundreds of representative fields, host-cluster models can provide tighter and more externally valid estimates while allowing PSF uncertainty and environment class to enter explicitly.
-
-\bibliographystyle{mnras}
-\bibliography{references}
 
 \label{lastpage}
 \end{document}
