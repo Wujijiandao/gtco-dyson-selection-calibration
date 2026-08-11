@@ -1,0 +1,125 @@
+{
+  "pdf_a": "/mnt/data/GTCO_MNRAS_submission_draft_v1_2_FINAL_IDENTITY/manuscript.pdf",
+  "pdf_b": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/manuscript.pdf",
+  "dpi": 100,
+  "engine": "pdftoppm",
+  "pages_a": 6,
+  "pages_b": 10,
+  "changed_pages": 10,
+  "per_page": [
+    {
+      "page": 1,
+      "a": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/render_a/page-1.png",
+      "b": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/render_b/page-01.png",
+      "changed": true,
+      "pct_changed": 0.1867024714416502,
+      "bbox": [
+        58,
+        44,
+        763,
+        1023
+      ],
+      "max_channel": 255,
+      "diff": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/diff/page-1.png"
+    },
+    {
+      "page": 2,
+      "a": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/render_a/page-2.png",
+      "b": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/render_b/page-02.png",
+      "changed": true,
+      "pct_changed": 0.20925102536406404,
+      "bbox": [
+        57,
+        40,
+        762,
+        1049
+      ],
+      "max_channel": 255,
+      "diff": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/diff/page-2.png"
+    },
+    {
+      "page": 3,
+      "a": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/render_a/page-3.png",
+      "b": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/render_b/page-03.png",
+      "changed": true,
+      "pct_changed": 0.3086281869160542,
+      "bbox": [
+        58,
+        73,
+        762,
+        1049
+      ],
+      "max_channel": 255,
+      "diff": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/diff/page-3.png"
+    },
+    {
+      "page": 4,
+      "a": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/render_a/page-4.png",
+      "b": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/render_b/page-04.png",
+      "changed": true,
+      "pct_changed": 0.34957044281711197,
+      "bbox": [
+        58,
+        40,
+        762,
+        1049
+      ],
+      "max_channel": 255,
+      "diff": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/diff/page-4.png"
+    },
+    {
+      "page": 5,
+      "a": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/render_a/page-5.png",
+      "b": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/render_b/page-05.png",
+      "changed": true,
+      "pct_changed": 0.3487450344791529,
+      "bbox": [
+        58,
+        73,
+        762,
+        1049
+      ],
+      "max_channel": 255,
+      "diff": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/diff/page-5.png"
+    },
+    {
+      "page": 6,
+      "a": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/render_a/page-6.png",
+      "b": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/render_b/page-06.png",
+      "changed": true,
+      "pct_changed": 0.2844188046262914,
+      "bbox": [
+        58,
+        40,
+        762,
+        1049
+      ],
+      "max_channel": 255,
+      "diff": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/diff/page-6.png"
+    },
+    {
+      "page": 7,
+      "missing": true,
+      "a": null,
+      "b": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/render_b/page-07.png"
+    },
+    {
+      "page": 8,
+      "missing": true,
+      "a": null,
+      "b": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/render_b/page-08.png"
+    },
+    {
+      "page": 9,
+      "missing": true,
+      "a": null,
+      "b": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/render_b/page-09.png"
+    },
+    {
+      "page": 10,
+      "missing": true,
+      "a": null,
+      "b": "/mnt/data/GTCO_MNRAS_submission_draft_v2_0/_diff_vs_v1/render_b/page-10.png"
+    }
+  ]
+}
