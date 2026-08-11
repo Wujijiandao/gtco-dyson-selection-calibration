@@ -1,0 +1,152 @@
+\begin{thebibliography}{}
+\makeatletter
+\relax
+\def\mn@urlcharsother{\let\do\@makeother \do\$\do\&\do\#\do\^\do\_\do\%\do\~}
+\def\mn@doi{\begingroup\mn@urlcharsother \@ifnextchar [ {\mn@doi@}
+  {\mn@doi@[]}}
+\def\mn@doi@[#1]#2{\def\@tempa{#1}\ifx\@tempa\@empty \href
+  {http://dx.doi.org/#2} {doi:#2}\else \href {http://dx.doi.org/#2} {#1}\fi
+  \endgroup}
+\def\mn@eprint#1#2{\mn@eprint@#1:#2::\@nil}
+\def\mn@eprint@arXiv#1{\href {http://arxiv.org/abs/#1} {{\tt arXiv:#1}}}
+\def\mn@eprint@dblp#1{\href {http://dblp.uni-trier.de/rec/bibtex/#1.xml}
+  {dblp:#1}}
+\def\mn@eprint@#1:#2:#3:#4\@nil{\def\@tempa {#1}\def\@tempb {#2}\def\@tempc
+  {#3}\ifx \@tempc \@empty \let \@tempc \@tempb \let \@tempb \@tempa \fi \ifx
+  \@tempb \@empty \def\@tempb {arXiv}\fi \@ifundefined
+  {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
+  mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
+
+\bibitem[\protect\citeauthoryear{Boubert \& Everall}{Boubert \&
+  Everall}{2022}]{BoubertEverall2022}
+Boubert D.,  Everall A.,  2022, \mn@doi [MNRAS] {10.1093/mnras/stab3665}, 510,
+  4626
+
+\bibitem[\protect\citeauthoryear{Carrigan}{Carrigan}{2009}]{Carrigan2009}
+Carrigan R.~A.,  2009, \mn@doi [ApJ] {10.1088/0004-637X/698/2/2075}, 698, 2075
+
+\bibitem[\protect\citeauthoryear{Clopper \& Pearson}{Clopper \&
+  Pearson}{1934}]{ClopperPearson1934}
+Clopper C.~J.,  Pearson E.~S.,  1934, \mn@doi [Biometrika]
+  {10.1093/biomet/26.4.404}, 26, 404
+
+\bibitem[\protect\citeauthoryear{Creevey, Sordo, Pailler  et~al.}{Creevey
+  et~al.}{2023}]{Creevey2023}
+Creevey O.~L.,  Sordo R.,  Pailler F.,   et~al., 2023, \mn@doi [A\&A]
+  {10.1051/0004-6361/202243688}, 674, A26
+
+\bibitem[\protect\citeauthoryear{Cutri et~al.}{Cutri et~al.}{2012}]{Cutri2012}
+Cutri R.~M.,  et~al., 2012, Explanatory Supplement to the WISE All-Sky Data
+  Release Products, IPAC/California Institute of Technology
+
+\bibitem[\protect\citeauthoryear{Cutri et~al.}{Cutri et~al.}{2013}]{Cutri2013}
+Cutri R.~M.,  et~al., 2013, Explanatory Supplement to the AllWISE Data Release
+  Products, IPAC/California Institute of Technology
+
+\bibitem[\protect\citeauthoryear{Dyson}{Dyson}{1960}]{Dyson1960}
+Dyson F.~J.,  1960, \mn@doi [Science] {10.1126/science.131.3414.1667}, 131,
+  1667
+
+\bibitem[\protect\citeauthoryear{Everall \& Boubert}{Everall \&
+  Boubert}{2022}]{EverallBoubert2022}
+Everall A.,  Boubert D.,  2022, \mn@doi [MNRAS] {10.1093/mnras/stab3262}, 509,
+  6205
+
+\bibitem[\protect\citeauthoryear{Everall \& Das}{Everall \&
+  Das}{2020}]{EverallDas2020}
+Everall A.,  Das P.,  2020, \mn@doi [MNRAS] {10.1093/mnras/staa283}, 493, 2042
+
+\bibitem[\protect\citeauthoryear{Griffith, Wright, Maldonado, Povich,
+  Sigurdsson  \& Mullan}{Griffith et~al.}{2015}]{Griffith2015}
+Griffith R.~L.,  Wright J.~T.,  Maldonado J.,  Povich M.~S.,  Sigurdsson S.,
+  Mullan B.,  2015, \mn@doi [ApJS] {10.1088/0067-0049/217/2/25}, 217, 25
+
+\bibitem[\protect\citeauthoryear{Harris et~al.}{Harris
+  et~al.}{2020}]{Harris2020}
+Harris C.~R.,  et~al., 2020, \mn@doi [Nature] {10.1038/s41586-020-2649-2}, 585,
+  357
+
+\bibitem[\protect\citeauthoryear{Hunter}{Hunter}{2007}]{Hunter2007}
+Hunter J.~D.,  2007, \mn@doi [Computing in Science \& Engineering]
+  {10.1109/MCSE.2007.55}, 9, 90
+
+\bibitem[\protect\citeauthoryear{Kennedy \& Wyatt}{Kennedy \&
+  Wyatt}{2012}]{KennedyWyatt2012}
+Kennedy G.~M.,  Wyatt M.~C.,  2012, \mn@doi [MNRAS]
+  {10.1111/j.1365-2966.2012.21621.x}, 426, 91
+
+\bibitem[\protect\citeauthoryear{Korn, Suazo, Zackrisson, Cort{\'e}s-Zuleta,
+  Rains  \& Nabizadeh}{Korn et~al.}{2026}]{Korn2026}
+Korn A.~J.,  Suazo M.,  Zackrisson E.,  Cort{\'e}s-Zuleta P.,  Rains A.~D.,
+  Nabizadeh A.,  2026, arXiv e-prints
+
+\bibitem[\protect\citeauthoryear{Lindegren, Klioner, Hern{\'a}ndez
+  et~al.}{Lindegren et~al.}{2021}]{Lindegren2021}
+Lindegren L.,  Klioner S.~A.,  Hern{\'a}ndez J.,   et~al., 2021, \mn@doi [A\&A]
+  {10.1051/0004-6361/202039709}, 649, A2
+
+\bibitem[\protect\citeauthoryear{McKinney}{McKinney}{2010}]{McKinney2010}
+McKinney W.,  2010, in Proceedings of the 9th Python in Science Conference. pp
+  56--61, \mn@doi{10.25080/Majora-92bf1922-00a}
+
+\bibitem[\protect\citeauthoryear{Ren, Garrett  \& Siemion}{Ren
+  et~al.}{2024}]{Ren2024RNAAS}
+Ren T.,  Garrett M.~A.,   Siemion A. P.~V.,  2024, \mn@doi [Research Notes of
+  the AAS] {10.3847/2515-5172/ad5017}, 8, 145
+
+\bibitem[\protect\citeauthoryear{Ren, Garrett  \& Siemion}{Ren
+  et~al.}{2025}]{Ren2025}
+Ren T.,  Garrett M.~A.,   Siemion A. P.~V.,  2025, \mn@doi [MNRAS]
+  {10.1093/mnrasl/slaf006}, 538, L56
+
+\bibitem[\protect\citeauthoryear{Ren, Garrett, Zackrisson, Korn, Siemion,
+  Wright  \& Brandeker}{Ren et~al.}{2026}]{Ren2026}
+Ren T.,  Garrett M.~A.,  Zackrisson E.,  Korn A.~J.,  Siemion A. P.~V.,  Wright
+  J.~T.,   Brandeker A.,  2026, arXiv e-prints
+
+\bibitem[\protect\citeauthoryear{Skrutskie et~al.}{Skrutskie
+  et~al.}{2006}]{Skrutskie2006}
+Skrutskie M.~F.,  et~al., 2006, \mn@doi [AJ] {10.1086/498708}, 131, 1163
+
+\bibitem[\protect\citeauthoryear{Suazo, Zackrisson, Wright, Korn  \&
+  Huston}{Suazo et~al.}{2022}]{Suazo2022}
+Suazo M.,  Zackrisson E.,  Wright J.~T.,  Korn A.~J.,   Huston M.,  2022,
+  \mn@doi [MNRAS] {10.1093/mnras/stac280}, 512, 2988
+
+\bibitem[\protect\citeauthoryear{Suazo, Zackrisson, Mahto, Lundell, Nettelblad,
+  Korn, Wright  \& Majumdar}{Suazo et~al.}{2024}]{Suazo2024}
+Suazo M.,  Zackrisson E.,  Mahto P.~K.,  Lundell F.,  Nettelblad C.,  Korn
+  A.~J.,  Wright J.~T.,   Majumdar S.,  2024, \mn@doi [MNRAS]
+  {10.1093/mnras/stae1186}, 531, 695
+
+\bibitem[\protect\citeauthoryear{Virtanen et~al.}{Virtanen
+  et~al.}{2020}]{Virtanen2020}
+Virtanen P.,  et~al., 2020, \mn@doi [Nature Methods]
+  {10.1038/s41592-019-0686-2}, 17, 261
+
+\bibitem[\protect\citeauthoryear{Wright et~al.}{Wright
+  et~al.}{2010}]{Wright2010}
+Wright E.~L.,  et~al., 2010, \mn@doi [AJ] {10.1088/0004-6256/140/6/1868}, 140,
+  1868
+
+\bibitem[\protect\citeauthoryear{Wright, Mullan, Sigurdsson  \& Povich}{Wright
+  et~al.}{2014a}]{Wright2014a}
+Wright J.~T.,  Mullan B.,  Sigurdsson S.,   Povich M.~S.,  2014a, \mn@doi [ApJ]
+  {10.1088/0004-637X/792/1/26}, 792, 26
+
+\bibitem[\protect\citeauthoryear{Wright, Griffith, Sigurdsson, Povich  \&
+  Mullan}{Wright et~al.}{2014b}]{Wright2014b}
+Wright J.~T.,  Griffith R.~L.,  Sigurdsson S.,  Povich M.~S.,   Mullan B.,
+  2014b, \mn@doi [ApJ] {10.1088/0004-637X/792/1/27}, 792, 27
+
+\bibitem[\protect\citeauthoryear{Zackrisson, Korn, Wehrhahn  \&
+  Reiter}{Zackrisson et~al.}{2018}]{Zackrisson2018}
+Zackrisson E.,  Korn A.~J.,  Wehrhahn A.,   Reiter J.,  2018, \mn@doi [ApJ]
+  {10.3847/1538-4357/aac386}, 862, 21
+
+\bibitem[\protect\citeauthoryear{Zackrisson et~al.,}{Zackrisson
+  et~al.}{2026}]{Zackrisson2026}
+Zackrisson E.,  et~al., 2026, arXiv e-prints
+
+\makeatother
+\end{thebibliography}

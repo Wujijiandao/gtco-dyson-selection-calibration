@@ -1,0 +1,6 @@
+PDF: /mnt/data/GTCO_MNRAS_submission_draft_v2_1/manuscript.pdf
+Pages: 10
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False
