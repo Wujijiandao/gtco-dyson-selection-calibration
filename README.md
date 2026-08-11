@@ -1,28 +1,19 @@
-# GTCO MNRAS submission draft v2.1
+# GTCO Dyson-Sphere Selection Calibration — v2.3 release candidate
 
-Primary manuscript:
-- `manuscript.tex`
-- `manuscript.pdf`
-- `references.bib`
+This release candidate contains the referee-hardened MNRAS analysis.
 
-Submission hardening:
-- `MANUSCRIPT_V2_1_CHANGELOG.md`
-- `REFEREE_PRECHECK_v2_1.md`
-- `COMPILE_QA.md`
-- `PDF_PREFLIGHT.txt`
+The most important change from the earlier snapshot is scientific, not cosmetic:
+- W3 remains the robust tested conditional morphology result.
+- W4 is explicitly PSF/operator sensitive and is **not** assigned a robust morphology-completeness bound.
+- the 0.414 result is explicitly coupling to baseline observed host state, not counterfactual host completeness.
 
-Current state:
-- MNRAS Paper format
-- 10 compiled pages
-- abstract ~243 words
-- 28 cited references
-- real-data and LOHO robustness results integrated
-- no occurrence-rate claim
-- public GitHub repository included in Data Availability
-- Zenodo DOI still pending before final submission
+Additional hardening scripts:
+- `06_photometric_noise_bracket.py`
+- `07_psf_disjoint_split_challenge.py`
+- `08_psf_continuous_mismatch.py`
+- `09_source_level_cluster_bootstrap.py`
+- `10_variant_template_reconstruction.py`
 
-Author:
-Yuzhan Zhang
-Independent Researcher, Beijing, China
-ORCID: https://orcid.org/0009-0000-3121-7972
-E-mail: wujijiandao2333@163.com
+See `CLAIM_BOUNDARIES.md`, `TEST_STATUS.md`, and `manuscript/`.
+
+After these files are pushed to the existing public repository, freeze the exact GitHub release as `v1.0.0-submission`, then archive that release with Zenodo.

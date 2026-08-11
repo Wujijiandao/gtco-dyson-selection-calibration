@@ -1,0 +1,7 @@
+Replace/upload these files in the EXISTING repository:
+https://github.com/Wujijiandao/gtco-dyson-selection-calibration
+
+Do not retain the old robust W4/joint morphology claim. v2.3 supersedes it.
+
+After the update is visible and checked, create `v1.0.0-submission`.
+Only then archive the release with Zenodo.

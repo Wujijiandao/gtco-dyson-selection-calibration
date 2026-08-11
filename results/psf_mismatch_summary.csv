@@ -1,0 +1,9 @@
+band,variant,N_hosts,N_valid,retention,hosts_with_any_failure
+W3,split,23,332,1.0,0
+W3,split_blur,23,332,1.0,0
+W3,split_blur_offset,23,332,1.0,0
+W3,split_offset,23,332,1.0,0
+W4,split,23,596,0.030201342281879196,23
+W4,split_blur,23,596,0.020134228187919462,23
+W4,split_blur_offset,23,596,0.01174496644295302,23
+W4,split_offset,23,596,0.026845637583892617,23
