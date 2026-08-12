@@ -1,2 +1,0 @@
-N_independent_hosts,hosts_with_all_valid_W3W4_pairs_passing,observed_host_level_success_fraction,exact_one_sided_95pct_lower_bound,exact_two_sided_95pct_lower_edge,N_valid_pair_grid_cases
-22,22,1.0,0.8726945683451612,0.8456274871844254,310
