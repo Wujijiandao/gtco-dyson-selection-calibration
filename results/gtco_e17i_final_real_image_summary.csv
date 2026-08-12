@@ -1,0 +1,3 @@
+band,N_real_hosts,N_grid_injections,catalog_saturation_risk_fraction,N_unsaturated_baseline_clean_injections,conditional_image_retention,fraction_morphology_score_improves,median_score_change,median_delta_residual_fraction,median_delta_centroid_arcsec
+W3,24,720,0.49722222222222223,332,1.0,0.7951807228915663,-0.35993314640200436,-0.02998620062892975,-0.14000468051999976
+W4,24,720,0.13055555555555556,596,1.0,0.9614093959731543,-0.683257338725701,-0.18726457874753166,-0.7118230956208786
