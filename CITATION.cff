@@ -7,9 +7,10 @@ authors:
     given-names: "Yuzhan"
     orcid: "https://orcid.org/0009-0000-3121-7972"
 repository-code: "https://github.com/Wujijiandao/gtco-dyson-selection-calibration"
-url: "https://github.com/Wujijiandao/gtco-dyson-selection-calibration"
+url: "https://doi.org/10.5281/zenodo.21896997"
 version: "1.0.0-submission"
 date-released: "2026-08-12"
+doi: "10.5281/zenodo.21896997"
 license: MIT
 keywords:
   - technosignatures
