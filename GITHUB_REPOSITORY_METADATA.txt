@@ -1,0 +1,6 @@
+Repository name: gtco-dyson-selection-calibration
+Description: Reproducible selection-function calibration for Gaia–2MASS–WISE partial-Dyson searches, including source-level host cuts and real AllWISE image injection.
+Visibility: Public
+Homepage: leave blank until Zenodo DOI or paper page is available
+Topics: technosignatures, dyson-spheres, gaia, 2mass, wise, selection-functions, reproducibility, astronomy
+Default branch: main
