@@ -1,0 +1,7 @@
+Post-release manuscript update only.
+
+Apply these files to the current `main` branch if you want the public repository to mirror the final submitted manuscript.
+
+DO NOT move, recreate, retag, or modify the frozen `v1.0.0-submission` Git tag. The Zenodo DOI 10.5281/zenodo.21896997 remains the archived software/reproduction release.
+
+This update changes only manuscript language/accessibility/AI-disclosure wording; it does not change the frozen scientific results.
