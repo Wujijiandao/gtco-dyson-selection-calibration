@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this software or reproduction package, please cite the archived release and associated paper."
+message: "This main branch contains the RASTI transfer manuscript. For the frozen numerical-reproduction snapshot underlying the reported results, cite Zenodo DOI 10.5281/zenodo.21896997."
 title: "GTCO Dyson-Sphere Selection Calibration"
 type: software
 authors:
@@ -7,10 +7,8 @@ authors:
     given-names: "Yuzhan"
     orcid: "https://orcid.org/0009-0000-3121-7972"
 repository-code: "https://github.com/Wujijiandao/gtco-dyson-selection-calibration"
-url: "https://doi.org/10.5281/zenodo.21896997"
-version: "1.0.0-submission"
-date-released: "2026-08-12"
-doi: "10.5281/zenodo.21896997"
+version: "1.1.0-rasti-transfer"
+date-released: "2026-09-21"
 license: MIT
 keywords:
   - technosignatures
@@ -20,4 +18,5 @@ keywords:
   - WISE
   - selection functions
   - injection recovery
+  - data methods
   - reproducibility

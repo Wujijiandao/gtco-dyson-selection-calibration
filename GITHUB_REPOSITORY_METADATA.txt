@@ -1,6 +1,9 @@
-Repository name: gtco-dyson-selection-calibration
-Description: Reproducible selection-function calibration for Gaia–2MASS–WISE partial-Dyson searches, including source-level host cuts and real AllWISE image injection.
-Visibility: Public
-Homepage: leave blank until Zenodo DOI or paper page is available
-Topics: technosignatures, dyson-spheres, gaia, 2mass, wise, selection-functions, reproducibility, astronomy
-Default branch: main
+Repository: gtco-dyson-selection-calibration
+Owner: Wujijiandao
+Current working version: v1.1.0-rasti-transfer
+Current manuscript target: RAS Techniques and Instruments (RASTI)
+Historical frozen release: v1.0.0-submission
+Historical Zenodo DOI: 10.5281/zenodo.21896997
+Author: Yuzhan Zhang
+ORCID: 0009-0000-3121-7972
+Affiliation: Independent Researcher, Beijing, China
