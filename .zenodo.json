@@ -1,0 +1,28 @@
+{
+  "title": "GTCO Dyson-Sphere Selection Calibration: RASTI transfer reproduction package",
+  "upload_type": "software",
+  "description": "Reproducibility package accompanying the RASTI-transfer manuscript on selection-function calibration for Gaia DR3-2MASS-AllWISE partial-Dyson searches. The numerical analysis is unchanged from the frozen v1.0.0-submission snapshot; this version updates manuscript framing, journal metadata, accessibility text, and submission documentation.",
+  "creators": [
+    {
+      "name": "Zhang, Yuzhan",
+      "orcid": "0009-0000-3121-7972",
+      "affiliation": "Independent Researcher, Beijing, China"
+    }
+  ],
+  "license": "mit",
+  "keywords": [
+    "technosignatures",
+    "Dyson spheres",
+    "Gaia DR3",
+    "2MASS",
+    "AllWISE",
+    "selection function",
+    "data methods",
+    "injection recovery",
+    "reproducibility"
+  ],
+  "version": "1.1.0-rasti-transfer",
+  "language": "eng",
+  "notes": "Prepared for transfer to RAS Techniques and Instruments after MNRAS MN-26-2504-P was declined for scope. No new numerical analysis is introduced relative to the frozen v1.0.0-submission analysis release.",
+  "access_right": "open"
+}
