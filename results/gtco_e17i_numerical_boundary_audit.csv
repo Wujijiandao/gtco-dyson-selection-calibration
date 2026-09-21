@@ -1,0 +1,2 @@
+band,raw_boundary_failures,unique_sources,max_absolute_score_change_among_boundary_failures,interpretation
+W4,2,1,9.947598e-14,floating-point threshold tie; not physical morphology loss

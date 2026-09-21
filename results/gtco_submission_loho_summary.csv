@@ -1,0 +1,3 @@
+band,N_independent_hosts,baseline_LOHO_pass_fraction,N_valid_grid_injections,conditional_image_retention,N_hosts_with_any_injection_failure,fraction_injections_score_improves,median_score_change
+W3,23,0.9583333333333334,332,1.0,0,0.7680722891566265,-0.5385484145106973
+W4,23,0.9583333333333334,596,1.0,0,0.8590604026845637,-0.5033400756675872

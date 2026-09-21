@@ -1,0 +1,2 @@
+N_templates,N_library_models,N_validation,N_truth_cells,seed,mean_catalog_survival,mean_photometric_recovery,host_pass_fraction,mean_joint_photometry_plus_host,factorized_mean_product,mean_joint_over_factorized_ratio
+265,220745,3000,54,20261005,0.9863024691358023,0.9105370370370371,0.442,0.41422222222222227,0.4024573703703704,1.0292325416752215
